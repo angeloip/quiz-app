@@ -5,3 +5,7 @@
 :root {
   color-scheme: light dark;
 }
+
+button:disabled {
+  @apply opacity-70 cursor-not-allowed;
+}

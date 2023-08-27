@@ -1,31 +1,42 @@
 import { useParams } from 'react-router-dom'
-import { questions } from '../data'
-import Question from '../components/Question'
+import { categories } from '../data'
 import { useState } from 'react'
-
-const LIMIT_QUESTION = 5
+import Quiz from '../components/Quiz'
 
 export default function Category() {
   const { category } = useParams<{ category: string }>()
-  const [indexQuestion, setIndexQuestion] = useState(0)
-
-  const questionsFiltered = questions
-    .filter((question) => question.category === category)
-    .sort(() => Math.random() - 0.5)
-    .slice(0, LIMIT_QUESTION)
-
-  const questionInfo = questionsFiltered[indexQuestion]
+  const selectedCategory = categories.find((img) => img.name === category)
+  const [start, setStart] = useState(false)
 
   return (
-    <section className="flex flex-col items-center justify-center gap-5 min-h-[calc(100vh-70px)]">
-      <div className="w-full max-w-xl">
-        <Question
-          info={questionInfo}
-          indexQuestion={indexQuestion}
-          setIndexQuestion={setIndexQuestion}
-          questionsFiltered={questionsFiltered}
-        />
-      </div>
+    <section className="flex flex-col items-center justify-center gap-5 min-h-[calc(100dvh-70px)]">
+      {start ? (
+        <Quiz category={category as string} setStart={setStart} />
+      ) : (
+        <div
+          className={`rounded-xl my-2 bg-gradient-to-r ${selectedCategory?.gradientColor} w-60 overflow-hidden`}
+        >
+          <h1 className="text-2xl font-semibold bg-stone-800 bg-opacity-60 py-3 px-5 text-center">
+            {selectedCategory?.name}
+          </h1>
+          <figure className="p-5 flex justify-center items-center h-48 w-48 mx-auto">
+            <img
+              src={selectedCategory?.img}
+              alt={selectedCategory?.name}
+              className="h-full w-full"
+            />
+          </figure>
+
+          <button
+            className="px-5 py-2 font-bold transition-colors bg-zinc-700 w-full"
+            onClick={() => {
+              setStart(true)
+            }}
+          >
+            ¡Empezar!
+          </button>
+        </div>
+      )}
     </section>
   )
 }

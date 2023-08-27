@@ -3,6 +3,8 @@ export interface Question {
   difficulty: string
   category: string
   question: string
-  correct_answer: string
-  incorrect_answers: string[]
+  correctAnswer: string
+  answers: string[]
+  userSelectedAnswer?: string
+  isCorrectUserAnswer?: boolean
 }

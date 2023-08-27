@@ -50,11 +50,12 @@ export const questions = [
     difficulty: 'Fácil',
     question: '¿Qué evento inició la Primera Guerra Mundial?',
     category: 'Historia',
-    correct_answer: 'El asesinato del Archiduque Franz Ferdinand de Austria',
-    incorrect_answers: [
+    correctAnswer: 'El asesinato del Archiduque Franz Ferdinand de Austria',
+    answers: [
       'El hundimiento del Titanic',
       'La invasión de Polonia por Alemania',
-      'La Revolución Francesa'
+      'La Revolución Francesa',
+      'El asesinato del Archiduque Franz Ferdinand de Austria'
     ]
   },
   {
@@ -62,56 +63,67 @@ export const questions = [
     difficulty: 'Fácil',
     question: '¿Quién es el autor de "Cien años de soledad"?        ',
     category: 'Literatura',
-    correct_answer: 'Gabriel García Márquez',
-    incorrect_answers: ['Julio Cortázar', 'Mario Vargas Llosa', 'Pablo Neruda']
+    correctAnswer: 'Gabriel García Márquez',
+    answers: [
+      'Julio Cortázar',
+      'Gabriel García Márquez',
+      'Mario Vargas Llosa',
+      'Pablo Neruda'
+    ]
   },
   {
     id: 3,
     difficulty: 'Fácil',
     question: '¿En qué deporte se utiliza un disco?',
     category: 'Deportes',
-    correct_answer: 'Hockey sobre hielo',
-    incorrect_answers: ['Fútbol', 'Baloncesto', 'Béisbol']
+    correctAnswer: 'Hockey sobre hielo',
+    answers: ['Hockey sobre hielo', 'Fútbol', 'Baloncesto', 'Béisbol']
   },
   {
     id: 4,
     difficulty: 'Medio',
     question: "¿Qué sustancia es conocida como la 'molécula de la vida'?",
     category: 'Ciencia',
-    correct_answer: 'El ADN',
-    incorrect_answers: ['La glucosa', 'La insulina', 'La proteína']
+    correctAnswer: 'El ADN',
+    answers: ['La glucosa', 'La insulina', 'El ADN', 'La proteína']
   },
   {
     id: 5,
     difficulty: 'Difícil',
     question: '¿Quién es considerado el padre de la filosofía occidental?',
     category: 'Filosofía',
-    correct_answer: 'Sócrates',
-    incorrect_answers: ['Aristóteles', 'Platón', 'Nietzsche']
+    correctAnswer: 'Sócrates',
+    answers: ['Aristóteles', 'Platón', 'Nietzsche', 'Sócrates']
   },
   {
     id: 6,
     difficulty: 'Medio',
     question: '¿En qué año fue fundada la compañía Apple?',
     category: 'Tecnología',
-    correct_answer: '1976',
-    incorrect_answers: ['1984', '1991', '1967']
+    correctAnswer: '1976',
+    answers: ['1984', '1976', '1991', '1967']
   },
   {
     id: 7,
     difficulty: 'Fácil',
     question: '¿Cuál es el río más largo del mundo?',
     category: 'Geografía',
-    correct_answer: 'El Río Amazonas',
-    incorrect_answers: ['El Río Nilo', 'El Río Yangtze', 'El Río Misisipi']
+    correctAnswer: 'El Río Amazonas',
+    answers: [
+      'El Río Nilo',
+      'El Río Yangtze',
+      'El Río Misisipi',
+      'El Río Amazonas'
+    ]
   },
   {
     id: 8,
     difficulty: 'Medio',
     question: '¿Cuál es el océano más grande del mundo?',
     category: 'Geografía',
-    correct_answer: 'El Océano Pacífico',
-    incorrect_answers: [
+    correctAnswer: 'El Océano Pacífico',
+    answers: [
+      'El Océano Pacífico',
       'El Océano Atlántico',
       'El Océano Índico',
       'El Océano Ártico'
@@ -122,16 +134,17 @@ export const questions = [
     difficulty: 'Difícil',
     question: '¿Cuál es la obra más famosa de William Shakespeare?',
     category: 'Literatura',
-    correct_answer: 'Hamlet',
-    incorrect_answers: ['Romeo y Julieta', 'Macbeth', 'El Rey Lear']
+    correctAnswer: 'Hamlet',
+    answers: ['Hamlet', 'Romeo y Julieta', 'Macbeth', 'El Rey Lear']
   },
   {
     id: 10,
     difficulty: 'Medio',
     question: '¿Qué es lo que se mide con la escala de Richter?',
     category: 'Ciencia',
-    correct_answer: 'La magnitud de los terremotos',
-    incorrect_answers: [
+    correctAnswer: 'La magnitud de los terremotos',
+    answers: [
+      'La magnitud de los terremotos',
       'La velocidad del sonido',
       'La intensidad de los huracanes',
       'La temperatura en grados Fahrenheit'
@@ -142,19 +155,20 @@ export const questions = [
     difficulty: 'Fácil',
     question: '¿Qué país ganó el primer Mundial de Fútbol?',
     category: 'Deportes',
-    correct_answer: 'Uruguay',
-    incorrect_answers: ['Brasil', 'Argentina', 'Alemania']
+    correctAnswer: 'Uruguay',
+    answers: ['Brasil', 'Argentina', 'Uruguay', 'Alemania']
   },
   {
     id: 12,
     difficulty: 'Medio',
     question: '¿Qué es el efecto invernadero?',
     category: 'Ciencia',
-    correct_answer: 'Un fenómeno atmosférico que retiene el calor en la Tierra',
-    incorrect_answers: [
+    correctAnswer: 'Un fenómeno atmosférico que retiene el calor en la Tierra',
+    answers: [
       'Un tipo de casa de vidrio para plantas',
       'Un proceso químico para conservar alimentos',
-      'Un tipo de sistema de calefacción para edificios'
+      'Un tipo de sistema de calefacción para edificios',
+      'Un fenómeno atmosférico que retiene el calor en la Tierra'
     ]
   },
   {
@@ -163,25 +177,26 @@ export const questions = [
     question:
       '¿En qué año se celebraron los primeros Juegos Olímpicos modernos?',
     category: 'Deportes',
-    correct_answer: '1896',
-    incorrect_answers: ['1900', '1924', '1936']
+    correctAnswer: '1896',
+    answers: ['1900', '1924', '1936', '1896']
   },
   {
     id: 14,
     difficulty: 'Fácil',
     question: '¿Cuál es el planeta más grande del sistema solar?',
     category: 'Ciencia',
-    correct_answer: 'Júpiter',
-    incorrect_answers: ['Saturno', 'Neptuno', 'Urano']
+    correctAnswer: 'Júpiter',
+    answers: ['Saturno', 'Neptuno', 'Urano', 'Júpiter']
   },
   {
     id: 15,
     difficulty: 'Fácil',
     question: "¿Quién escribió la obra 'Don Quijote de la Mancha'?",
     category: 'Literatura',
-    correct_answer: 'Miguel de Cervantes',
-    incorrect_answers: [
+    correctAnswer: 'Miguel de Cervantes',
+    answers: [
       'Federico García Lorca',
+      'Miguel de Cervantes',
       'Gabriel García Márquez',
       'Pablo Neruda'
     ]
@@ -191,42 +206,48 @@ export const questions = [
     difficulty: 'Medio',
     question: '¿Cuál es el elemento químico más abundante en la Tierra?',
     category: 'Ciencia',
-    correct_answer: 'Oxígeno',
-    incorrect_answers: ['Nitrógeno', 'Hierro', 'Silicio']
+    correctAnswer: 'Oxígeno',
+    answers: ['Oxígeno', 'Nitrógeno', 'Hierro', 'Silicio']
   },
   {
     id: 17,
     difficulty: 'Medio',
     question: '¿Cuál es el país más poblado del mundo?',
     category: 'Geografía',
-    correct_answer: 'China',
-    incorrect_answers: ['India', 'Estados Unidos', 'Brasil']
+    correctAnswer: 'China',
+    answers: ['India', 'Estados Unidos', 'China', 'Brasil']
   },
   {
     id: 18,
     difficulty: 'Medio',
     question: '¿Quién es considerado el padre de la filosofía occidental?',
     category: 'Filosofía',
-    correct_answer: 'Sócrates',
-    incorrect_answers: ['Platón', 'Aristóteles', 'Descartes']
+    correctAnswer: 'Sócrates',
+    answers: ['Sócrates', 'Platón', 'Aristóteles', 'Descartes']
   },
   {
     id: 19,
     difficulty: 'Difícil',
     question: '¿Qué científico propuso la teoría del Big Bang?',
     category: 'Ciencia',
-    correct_answer: 'Georges Lemaître',
-    incorrect_answers: ['Albert Einstein', 'Stephen Hawking', 'Isaac Newton']
+    correctAnswer: 'Georges Lemaître',
+    answers: [
+      'Albert Einstein',
+      'Stephen Hawking',
+      'Isaac Newton',
+      'Georges Lemaître'
+    ]
   },
   {
     id: 20,
     difficulty: 'Fácil',
     question: '¿Quién es el autor de la novela "El viejo y el mar"?',
     category: 'Literatura',
-    correct_answer: 'Ernest Hemingway',
-    incorrect_answers: [
+    correctAnswer: 'Ernest Hemingway',
+    answers: [
       'William Shakespeare',
       'J.K. Rowling',
+      'Ernest Hemingway',
       'F. Scott Fitzgerald'
     ]
   },
@@ -235,32 +256,32 @@ export const questions = [
     difficulty: 'Fácil',
     question: '¿Cuál es el órgano más grande del cuerpo humano?',
     category: 'Ciencia',
-    correct_answer: 'La piel',
-    incorrect_answers: ['El hígado', 'El corazón', 'Los pulmones']
+    correctAnswer: 'La piel',
+    answers: ['El hígado', 'La piel', 'El corazón', 'Los pulmones']
   },
   {
     id: 22,
     difficulty: 'Medio',
     question: '¿Quién es el creador del sistema operativo Linux?',
     category: 'Tecnología',
-    correct_answer: 'Linus Torvalds',
-    incorrect_answers: ['Steve Jobs', 'Bill Gates', 'Mark Zuckerberg']
+    correctAnswer: 'Linus Torvalds',
+    answers: ['Linus Torvalds', 'Steve Jobs', 'Bill Gates', 'Mark Zuckerberg']
   },
   {
     id: 23,
     difficulty: 'Medio',
     question: '¿En qué año terminó la Segunda Guerra Mundial?',
     category: 'Historia',
-    correct_answer: '1945',
-    incorrect_answers: ['1939', '1941', '1943']
+    correctAnswer: '1945',
+    answers: ['1939', '1941', '1943', '1945']
   },
   {
     id: 24,
     difficulty: 'Fácil',
     question: '¿Cuál es el planeta más cercano al Sol?',
     category: 'Ciencia',
-    correct_answer: 'Mercurio',
-    incorrect_answers: ['Venus', 'Marte', 'Júpiter']
+    correctAnswer: 'Mercurio',
+    answers: ['Venus', 'Marte', 'Mercurio', 'Júpiter']
   },
   {
     id: 25,
@@ -268,32 +289,37 @@ export const questions = [
     question:
       "¿Qué escritor es conocido por haber escrito 'Cien años de soledad'?",
     category: 'Literatura',
-    correct_answer: 'Gabriel García Márquez',
-    incorrect_answers: ['Jorge Luis Borges', 'Pablo Neruda', 'Julio Cortázar']
+    correctAnswer: 'Gabriel García Márquez',
+    answers: [
+      'Jorge Luis Borges',
+      'Pablo Neruda',
+      'Gabriel García Márquez',
+      'Julio Cortázar'
+    ]
   },
   {
     id: 26,
     difficulty: 'Difícil',
     question: '¿Qué país es el más grande en términos de superficie terrestre?',
     category: 'Geografía',
-    correct_answer: 'Rusia',
-    incorrect_answers: ['Estados Unidos', 'China', 'Australia']
+    correctAnswer: 'Rusia',
+    answers: ['Rusia', 'Estados Unidos', 'China', 'Australia']
   },
   {
     id: 27,
     difficulty: 'Medio',
     question: '¿Cuál es la capital de Canadá?',
     category: 'Geografía',
-    correct_answer: 'Ottawa',
-    incorrect_answers: ['Toronto', 'Montreal', 'Vancouver']
+    correctAnswer: 'Ottawa',
+    answers: ['Toronto', 'Montreal', 'Vancouver', 'Ottawa']
   },
   {
     id: 28,
     difficulty: 'Fácil',
     question: '¿Qué elemento químico tiene el símbolo H?',
     category: 'Ciencia',
-    correct_answer: 'Hidrógeno',
-    incorrect_answers: ['Helio', 'Hierro', 'Hormigón']
+    correctAnswer: 'Hidrógeno',
+    answers: ['Helio', 'Hierro', 'Hidrógeno', 'Hormigón']
   },
   {
     id: 29,
@@ -301,16 +327,21 @@ export const questions = [
     question:
       '¿Qué jugador de fútbol ha ganado más Balones de Oro en la historia?',
     category: 'Deportes',
-    correct_answer: 'Lionel Messi',
-    incorrect_answers: ['Cristiano Ronaldo', 'Johan Cruyff', 'Diego Maradona']
+    correctAnswer: 'Lionel Messi',
+    answers: [
+      'Cristiano Ronaldo',
+      'Lionel Messi',
+      'Johan Cruyff',
+      'Diego Maradona'
+    ]
   },
   {
     id: 30,
     difficulty: 'Fácil',
     question: '¿En qué año ocurrió la Revolución Francesa?',
     category: 'Historia',
-    correct_answer: '1789',
-    incorrect_answers: ['1848', '1917', '1492']
+    correctAnswer: '1789',
+    answers: ['1848', '1789', '1917', '1492']
   },
   // -------------------
   {
@@ -318,8 +349,9 @@ export const questions = [
     difficulty: 'Fácil',
     category: 'Tecnología',
     question: '¿Qué significa la sigla HTML?',
-    correct_answer: 'HyperText Markup Language',
-    incorrect_answers: [
+    correctAnswer: 'HyperText Markup Language',
+    answers: [
+      'HyperText Markup Language',
       'Hyperlinks and Text Markup Language',
       'Home Tool Markup Language',
       'Hyperlinking Text Markup Language'
@@ -330,8 +362,8 @@ export const questions = [
     difficulty: 'Fácil',
     category: 'Tecnología',
     question: '¿Cuál es el navegador web más utilizado en el mundo?',
-    correct_answer: 'Google Chrome',
-    incorrect_answers: ['Safari', 'Firefox', 'Internet Explorer']
+    correctAnswer: 'Google Chrome',
+    answers: ['Safari', 'Firefox', 'Internet Explorer', 'Google Chrome']
   },
   {
     id: 33,
@@ -339,16 +371,17 @@ export const questions = [
     category: 'Tecnología',
     question:
       '¿Qué lenguaje de programación es más utilizado para el desarrollo web?',
-    correct_answer: 'JavaScript',
-    incorrect_answers: ['Python', 'Java', 'C++']
+    correctAnswer: 'JavaScript',
+    answers: ['Python', 'Java', 'C++', 'JavaScript']
   },
   {
     id: 34,
     difficulty: 'Medio',
     category: 'Tecnología',
     question: '¿Qué es un servidor web?',
-    correct_answer: 'Un programa que recibe y procesa solicitudes HTTP',
-    incorrect_answers: [
+    correctAnswer: 'Un programa que recibe y procesa solicitudes HTTP',
+    answers: [
+      'Un programa que recibe y procesa solicitudes HTTP',
       'Un programa que envía correos electrónicos',
       'Un programa que protege la privacidad de los usuarios en línea',
       'Un programa que realiza operaciones matemáticas complejas'
@@ -359,11 +392,12 @@ export const questions = [
     difficulty: 'Medio',
     category: 'Tecnología',
     question: '¿Qué es un ataque de phishing?',
-    correct_answer:
+    correctAnswer:
       'Un intento de obtener información confidencial a través de un correo electrónico falso',
-    incorrect_answers: [
+    answers: [
       'Un virus que daña los archivos del ordenador',
       'Un tipo de ataque DDoS',
+      'Un intento de obtener información confidencial a través de un correo electrónico falso',
       'Un intento de secuestrar el tráfico de internet'
     ]
   },
@@ -372,9 +406,10 @@ export const questions = [
     difficulty: 'Medio',
     category: 'Tecnología',
     question: '¿Qué es un archivo CSV?',
-    correct_answer: 'Un archivo de texto con valores separados por comas',
-    incorrect_answers: [
+    correctAnswer: 'Un archivo de texto con valores separados por comas',
+    answers: [
       'Un archivo de audio comprimido',
+      'Un archivo de texto con valores separados por comas',
       'Un archivo de imagen en formato vectorial',
       'Un archivo de vídeo de alta definición'
     ]
@@ -384,11 +419,12 @@ export const questions = [
     difficulty: 'Difícil',
     category: 'Tecnología',
     question: '¿Qué es un algoritmo de cifrado asimétrico?',
-    correct_answer: 'Un método de cifrado que utiliza dos claves diferentes',
-    incorrect_answers: [
+    correctAnswer: 'Un método de cifrado que utiliza dos claves diferentes',
+    answers: [
       'Un método de cifrado que utiliza la misma clave para cifrar y descifrar',
       'Un método de cifrado que no utiliza claves',
-      'Un método de cifrado que solo se utiliza en aplicaciones militares'
+      'Un método de cifrado que solo se utiliza en aplicaciones militares',
+      'Un método de cifrado que utiliza dos claves diferentes'
     ]
   },
   {
@@ -396,12 +432,12 @@ export const questions = [
     difficulty: 'Difícil',
     category: 'Tecnología',
     question: '¿Qué es una red privada virtual (VPN)?',
-    correct_answer:
-      'Una conexión segura a una red privada a través de internet',
-    incorrect_answers: [
+    correctAnswer: 'Una conexión segura a una red privada a través de internet',
+    answers: [
       'Una red de computadoras en una organización',
       'Una red de computadoras conectadas a internet',
-      'Una red de computadoras que solo utiliza tecnología inalámbrica'
+      'Una red de computadoras que solo utiliza tecnología inalámbrica',
+      'Una conexión segura a una red privada a través de internet'
     ]
   },
   {
@@ -409,24 +445,25 @@ export const questions = [
     difficulty: 'Difícil',
     question: '¿En qué año se produjo la Guerra de los Cien Años?',
     category: 'Historia',
-    correct_answer: '1337',
-    incorrect_answers: ['1066', '1415', '1642']
+    correctAnswer: '1337',
+    answers: ['1066', '1337', '1415', '1642']
   },
   {
     id: 40,
     difficulty: 'Fácil',
     question: '¿En qué año se produjo el ataque a Pearl Harbor?',
     category: 'Historia',
-    correct_answer: '1941',
-    incorrect_answers: ['1939', '1942', '1945']
+    correctAnswer: '1941',
+    answers: ['1941', '1939', '1942', '1945']
   },
   {
     id: 41,
     difficulty: 'Medio',
     question: '¿Qué tratado dio fin a la Primera Guerra Mundial?',
     category: 'Historia',
-    correct_answer: 'Tratado de Versalles',
-    incorrect_answers: [
+    correctAnswer: 'Tratado de Versalles',
+    answers: [
+      'Tratado de Versalles',
       'Tratado de Tordesillas',
       'Tratado de Westfalia',
       'Tratado de Nankín'
@@ -437,8 +474,8 @@ export const questions = [
     difficulty: 'Difícil',
     question: '¿Quién fue el último emperador de la Dinastía Qing en China?',
     category: 'Historia',
-    correct_answer: 'Puyi',
-    incorrect_answers: ['Hongwu', 'Wuzong', 'Kangxi']
+    correctAnswer: 'Puyi',
+    answers: ['Puyi', 'Hongwu', 'Wuzong', 'Kangxi']
   },
   {
     id: 43,
@@ -446,8 +483,8 @@ export const questions = [
     question:
       '¿Cuál fue el nombre de la primera expedición de Cristóbal Colón?',
     category: 'Historia',
-    correct_answer: 'La Santa María',
-    incorrect_answers: ['La Pinta', 'La Niña', 'La Santísima Trinidad']
+    correctAnswer: 'La Santa María',
+    answers: ['La Pinta', 'La Niña', 'La Santa María', 'La Santísima Trinidad']
   },
   {
     id: 44,
@@ -455,8 +492,8 @@ export const questions = [
     question:
       '¿Cuál fue el primer país en enviar un objeto hecho por el hombre a la luna?',
     category: 'Historia',
-    correct_answer: 'Estados Unidos',
-    incorrect_answers: ['Unión Soviética', 'China', 'Japón']
+    correctAnswer: 'Estados Unidos',
+    answers: ['Unión Soviética', 'Estados Unidos', 'China', 'Japón']
   },
   {
     id: 45,
@@ -464,18 +501,19 @@ export const questions = [
     question:
       '¿Cuál fue la primera ciudad en el mundo en tener una población de más de un millón de habitantes?',
     category: 'Historia',
-    correct_answer: 'Roma',
-    incorrect_answers: ['Atenas', 'Babilonia', 'Nínive']
+    correctAnswer: 'Roma',
+    answers: ['Atenas', 'Babilonia', 'Nínive', 'Roma']
   },
   {
     id: 46,
     difficulty: 'Fácil',
     question: '¿Quién fue el primer presidente de los Estados Unidos?',
     category: 'Historia',
-    correct_answer: 'George Washington',
-    incorrect_answers: [
+    correctAnswer: 'George Washington',
+    answers: [
       'Thomas Jefferson',
       'Abraham Lincoln',
+      'George Washington',
       'Franklin D. Roosevelt'
     ]
   },
@@ -484,16 +522,17 @@ export const questions = [
     difficulty: 'Medio',
     question: '¿Cuál fue la primera dinastía en gobernar en China?',
     category: 'Historia',
-    correct_answer: 'Xia',
-    incorrect_answers: ['Han', 'Tang', 'Song']
+    correctAnswer: 'Xia',
+    answers: ['Han', 'Xia', 'Tang', 'Song']
   },
   {
     id: 48,
     difficulty: 'Fácil',
     question: '¿Quién escribió la obra "Don Quijote de la Mancha"?',
     category: 'Literatura',
-    correct_answer: 'Miguel de Cervantes',
-    incorrect_answers: [
+    correctAnswer: 'Miguel de Cervantes',
+    answers: [
+      'Miguel de Cervantes',
       'Gabriel García Márquez',
       'Jorge Luis Borges',
       'Pablo Neruda'
@@ -505,11 +544,12 @@ export const questions = [
     question:
       '¿Cuál de las siguientes novelas es escrita por Gabriel García Márquez?',
     category: 'Literatura',
-    correct_answer: 'Cien años de soledad',
-    incorrect_answers: [
+    correctAnswer: 'Cien años de soledad',
+    answers: [
       'Rayuela',
       'La ciudad y los perros',
-      'La casa de los espíritus'
+      'La casa de los espíritus',
+      'Cien años de soledad'
     ]
   },
   {
@@ -517,16 +557,26 @@ export const questions = [
     difficulty: 'Difícil',
     question: '¿Quién escribió "La metamorfosis"?',
     category: 'Literatura',
-    correct_answer: 'Franz Kafka',
-    incorrect_answers: ['Virginia Woolf', 'James Joyce', 'F. Scott Fitzgerald']
+    correctAnswer: 'Franz Kafka',
+    answers: [
+      'Virginia Woolf',
+      'James Joyce',
+      'F. Scott Fitzgerald',
+      'Franz Kafka'
+    ]
   },
   {
     id: 51,
     difficulty: 'Fácil',
     question: '¿Quién escribió "El retrato de Dorian Gray"?',
     category: 'Literatura',
-    correct_answer: 'Oscar Wilde',
-    incorrect_answers: ['Edgar Allan Poe', 'Emily Bronte', 'Charles Dickens']
+    correctAnswer: 'Oscar Wilde',
+    answers: [
+      'Edgar Allan Poe',
+      'Emily Bronte',
+      'Oscar Wilde',
+      'Charles Dickens'
+    ]
   },
   {
     id: 52,
@@ -534,8 +584,8 @@ export const questions = [
     question:
       '¿Cuál de las siguientes obras no fue escrita por William Shakespeare?',
     category: 'Literatura',
-    correct_answer: 'Moby Dick',
-    incorrect_answers: ['Hamlet', 'Macbeth', 'Otelo']
+    correctAnswer: 'Moby Dick',
+    answers: ['Hamlet', 'Moby Dick', 'Macbeth', 'Otelo']
   },
   {
     id: 53,
@@ -543,8 +593,9 @@ export const questions = [
     question:
       '¿Cuál de las siguientes obras de José Saramago recibió el Premio Nobel de Literatura?',
     category: 'Literatura',
-    correct_answer: 'Ensayo sobre la ceguera',
-    incorrect_answers: [
+    correctAnswer: 'Ensayo sobre la ceguera',
+    answers: [
+      'Ensayo sobre la ceguera',
       'La caverna',
       'El evangelio según Jesucristo',
       'Las intermitencias de la muerte'
@@ -555,8 +606,9 @@ export const questions = [
     difficulty: 'Fácil',
     question: '¿Quién escribió la novela "El guardián entre el centeno"?',
     category: 'Literatura',
-    correct_answer: 'J.D. Salinger',
-    incorrect_answers: [
+    correctAnswer: 'J.D. Salinger',
+    answers: [
+      'J.D. Salinger',
       'F. Scott Fitzgerald',
       'Ernest Hemingway',
       'Tennessee Williams'
@@ -567,80 +619,80 @@ export const questions = [
     difficulty: 'Difícil',
     question: '¿Cuál es el país más grande de África?',
     category: 'Geografía',
-    correct_answer: 'Argelia',
-    incorrect_answers: ['Sudán', 'Libia', 'República Democrática del Congo']
+    correctAnswer: 'Argelia',
+    answers: ['Sudán', 'Libia', 'Argelia', 'República Democrática del Congo']
   },
   {
     id: 56,
     difficulty: 'Fácil',
     question: '¿Cuál es el país más grande del mundo?',
     category: 'Geografía',
-    correct_answer: 'Rusia',
-    incorrect_answers: ['China', 'Estados Unidos', 'Canadá']
+    correctAnswer: 'Rusia',
+    answers: ['China', 'Rusia', 'Estados Unidos', 'Canadá']
   },
   {
     id: 57,
     difficulty: 'Medio',
     question: '¿En qué continente se encuentra el lago Baikal?',
     category: 'Geografía',
-    correct_answer: 'Asia',
-    incorrect_answers: ['Europa', 'África', 'América del Sur']
+    correctAnswer: 'Asia',
+    answers: ['Europa', 'Asia', 'África', 'América del Sur']
   },
   {
     id: 58,
     difficulty: 'Medio',
     question: '¿Cuál es el país más poblado del mundo?',
     category: 'Geografía',
-    correct_answer: 'China',
-    incorrect_answers: ['India', 'Estados Unidos', 'Indonesia']
+    correctAnswer: 'China',
+    answers: ['China', 'India', 'Estados Unidos', 'Indonesia']
   },
   {
     id: 59,
     difficulty: 'Difícil',
     question: '¿Cuál es la montaña más alta del mundo?',
     category: 'Geografía',
-    correct_answer: 'El Monte Everest',
-    incorrect_answers: ['El K2', 'El Mont Blanc', 'El Aconcagua']
+    correctAnswer: 'El Monte Everest',
+    answers: ['El K2', 'El Mont Blanc', 'El Aconcagua', 'El Monte Everest']
   },
   {
     id: 60,
     difficulty: 'Difícil',
     question: '¿Cuál es el país más pequeño del mundo?',
     category: 'Geografía',
-    correct_answer: 'El Vaticano',
-    incorrect_answers: ['Mónaco', 'Nauru', 'Tuvalu']
+    correctAnswer: 'El Vaticano',
+    answers: ['Mónaco', 'Nauru', 'El Vaticano', 'Tuvalu']
   },
   {
     id: 61,
     difficulty: 'Medio',
     question: '¿Cuál es el país más extenso de África?',
     category: 'Geografía',
-    correct_answer: 'Argelia',
-    incorrect_answers: ['Nigeria', 'Egipto', 'Sudáfrica']
+    correctAnswer: 'Argelia',
+    answers: ['Nigeria', 'Egipto', 'Argelia', 'Sudáfrica']
   },
   {
     id: 62,
     difficulty: 'Fácil',
     question: '¿Qué país ganó la Copa Mundial de la FIFA en 2018?',
     category: 'Deportes',
-    correct_answer: 'Francia',
-    incorrect_answers: ['Alemania', 'Brasil', 'Argentina']
+    correctAnswer: 'Francia',
+    answers: ['Francia', 'Alemania', 'Brasil', 'Argentina']
   },
   {
     id: 63,
     difficulty: 'Fácil',
     question: '¿Qué deporte se juega en Wimbledon?',
     category: 'Deportes',
-    correct_answer: 'Tenis',
-    incorrect_answers: ['Golf', 'Fútbol', 'Rugby']
+    correctAnswer: 'Tenis',
+    answers: ['Golf', 'Fútbol', 'Rugby', 'Tenis']
   },
   {
     id: 64,
     difficulty: 'Medio',
     question: '¿Cuántos puntos vale un touchdown en el fútbol americano?',
     category: 'Deportes',
-    correct_answer: '6',
-    incorrect_answers: ['4', '7', '5']
+    correctAnswer: '6',
+    answers: ['4', '6', '7', '5']
   },
   {
     id: 65,
@@ -648,24 +700,29 @@ export const questions = [
     question:
       '¿Cuál es el jugador de baloncesto con más anillos de campeonato en la NBA?',
     category: 'Deportes',
-    correct_answer: 'Bill Russell',
-    incorrect_answers: ['Michael Jordan', 'Kareem Abdul-Jabbar', 'LeBron James']
+    correctAnswer: 'Bill Russell',
+    answers: [
+      'Bill Russell',
+      'Michael Jordan',
+      'Kareem Abdul-Jabbar',
+      'LeBron James'
+    ]
   },
   {
     id: 66,
     difficulty: 'Medio',
     question: '¿Cuál es el país de origen del futbolista Lionel Messi?',
     category: 'Deportes',
-    correct_answer: 'Argentina',
-    incorrect_answers: ['Brasil', 'España', 'Portugal']
+    correctAnswer: 'Argentina',
+    answers: ['Brasil', 'España', 'Argentina', 'Portugal']
   },
   {
     id: 67,
     difficulty: 'Difícil',
     question: '¿En qué año se celebraron los Juegos Olímpicos de Beijing?',
     category: 'Deportes',
-    correct_answer: '2008',
-    incorrect_answers: ['2012', '2004', '2016']
+    correctAnswer: '2008',
+    answers: ['2012', '2004', '2008', '2016']
   },
   {
     id: 68,
@@ -673,43 +730,54 @@ export const questions = [
     question:
       '¿Quién es el máximo goleador en la historia de la Liga Española?',
     category: 'Deportes',
-    correct_answer: 'Lionel Messi',
-    incorrect_answers: ['Cristiano Ronaldo', 'Telmo Zarra', 'Hugo Sánchez']
+    correctAnswer: 'Lionel Messi',
+    answers: [
+      'Lionel Messi',
+      'Cristiano Ronaldo',
+      'Telmo Zarra',
+      'Hugo Sánchez'
+    ]
   },
   {
     id: 69,
     difficulty: 'Difícil',
     question: '¿En qué deporte se utiliza el término "smash"?',
     category: 'Deportes',
-    correct_answer: 'Bádminton',
-    incorrect_answers: ['Voleibol', 'Tenis', 'Squash']
+    correctAnswer: 'Bádminton',
+    answers: ['Voleibol', 'Tenis', 'Squash', 'Bádminton']
   },
   {
     id: 70,
     category: 'Filosofía',
     difficulty: 'Fácil',
     question: '¿Cuál es la obra más conocida de Platón?',
-    correct_answer: 'La República',
-    incorrect_answers: ['El Banquete', 'Timeo', 'Fedón']
+    correctAnswer: 'La República',
+    answers: ['El Banquete', 'La República', 'Timeo', 'Fedón']
   },
   {
     id: 71,
     category: 'Filosofía',
     difficulty: 'Medio',
     question: '¿Cuál es el concepto central de la filosofía de Descartes?',
-    correct_answer: 'El cogito ergo sum',
-    incorrect_answers: ['El empirismo', 'El materialismo', 'La fenomenología']
+    correctAnswer: 'El cogito ergo sum',
+    answers: [
+      'El empirismo',
+      'El materialismo',
+      'El cogito ergo sum',
+      'La fenomenología'
+    ]
   },
   {
     id: 72,
     category: 'Filosofía',
     difficulty: 'Difícil',
     question: '¿Qué es la dialéctica en la filosofía de Hegel?',
-    correct_answer:
+    correctAnswer:
       'El método para llegar a la verdad mediante la contradicción',
-    incorrect_answers: [
+    answers: [
       'La creación de un sistema filosófico',
       'La negación de la realidad',
+      'El método para llegar a la verdad mediante la contradicción',
       'El análisis de los procesos cognitivos'
     ]
   },
@@ -718,9 +786,10 @@ export const questions = [
     category: 'Filosofía',
     difficulty: 'Medio',
     question: '¿Qué es el nihilismo en la filosofía?',
-    correct_answer: 'La negación de todos los valores y creencias',
-    incorrect_answers: [
+    correctAnswer: 'La negación de todos los valores y creencias',
+    answers: [
       'La afirmación de la existencia de un ser superior',
+      'La negación de todos los valores y creencias',
       'La creencia en la reencarnación',
       'La negación de la existencia del mundo externo'
     ]
@@ -730,11 +799,12 @@ export const questions = [
     category: 'Filosofía',
     difficulty: 'Difícil',
     question: '¿Qué es la deconstrucción en la filosofía de Jacques Derrida?',
-    correct_answer:
+    correctAnswer:
       'El análisis crítico de la relación entre los significados y los conceptos',
-    incorrect_answers: [
+    answers: [
       'La creación de nuevos conceptos a partir de la combinación de los antiguos',
       'La búsqueda de la verdad absoluta',
+      'El análisis crítico de la relación entre los significados y los conceptos',
       'La negación de la existencia del lenguaje'
     ]
   },
@@ -743,11 +813,12 @@ export const questions = [
     category: 'Filosofía',
     difficulty: 'Fácil',
     question: '¿Qué es la ética?',
-    correct_answer:
+    correctAnswer:
       'La rama de la filosofía que estudia la moral y la conducta humana',
-    incorrect_answers: [
+    answers: [
       'La rama de la filosofía que estudia la lógica',
       'La rama de la filosofía que estudia la mente',
+      'La rama de la filosofía que estudia la moral y la conducta humana',
       'La rama de la filosofía que estudia el conocimiento'
     ]
   },
@@ -756,11 +827,12 @@ export const questions = [
     category: 'Filosofía',
     difficulty: 'Medio',
     question: '¿Qué es el imperativo categórico en la filosofía de Kant?',
-    correct_answer: 'La regla moral que se debe seguir en cualquier situación',
-    incorrect_answers: [
+    correctAnswer: 'La regla moral que se debe seguir en cualquier situación',
+    answers: [
       'La creencia en la existencia de un Dios creador',
       'La negación de la libertad humana',
-      'La afirmación de la existencia de una verdad absoluta'
+      'La afirmación de la existencia de una verdad absoluta',
+      'La regla moral que se debe seguir en cualquier situación'
     ]
   },
   {
@@ -768,8 +840,8 @@ export const questions = [
     difficulty: 'Fácil',
     question: '¿Quién fue el autor de la obra "La República"?',
     category: 'Filosofía',
-    correct_answer: 'Platón',
-    incorrect_answers: ['Aristóteles', 'Sócrates', 'Nietzsche']
+    correctAnswer: 'Platón',
+    answers: ['Platón', 'Aristóteles', 'Sócrates', 'Nietzsche']
   },
   {
     id: 78,
@@ -777,8 +849,8 @@ export const questions = [
     question:
       '¿Cuál es el término filosófico para referirse al estudio del conocimiento?',
     category: 'Filosofía',
-    correct_answer: 'Epistemología',
-    incorrect_answers: ['Ontología', 'Metafísica', 'Lógica']
+    correctAnswer: 'Epistemología',
+    answers: ['Ontología', 'Metafísica', 'Lógica', 'Epistemología']
   },
   {
     id: 79,
@@ -786,8 +858,9 @@ export const questions = [
     question:
       '¿Quién escribió el libro "El mundo como voluntad y representación"?',
     category: 'Filosofía',
-    correct_answer: 'Arthur Schopenhauer',
-    incorrect_answers: [
+    correctAnswer: 'Arthur Schopenhauer',
+    answers: [
+      'Arthur Schopenhauer',
       'Friedrich Nietzsche',
       'Immanuel Kant',
       'Jean-Paul Sartre'
@@ -798,18 +871,19 @@ export const questions = [
     difficulty: 'Difícil',
     question: '¿Cuál es la partícula subatómica más pesada?',
     category: 'Ciencia',
-    correct_answer: 'Quark top',
-    incorrect_answers: ['Electrón', 'Protón', 'Neutrón']
+    correctAnswer: 'Quark top',
+    answers: ['Quark top', 'Electrón', 'Protón', 'Neutrón']
   },
   {
     id: 81,
     category: 'Ciencia',
     difficulty: 'Medio',
     question: '¿Qué es la capa de ozono?',
-    correct_answer:
+    correctAnswer:
       'Una capa de gas que protege la Tierra de la radiación ultravioleta del sol',
-    incorrect_answers: [
+    answers: [
       'Una capa de nubes en la atmósfera',
+      'Una capa de gas que protege la Tierra de la radiación ultravioleta del sol',
       'La capa más externa de la Tierra',
       'Una capa de gases que produce el efecto invernadero'
     ]
@@ -819,12 +893,13 @@ export const questions = [
     category: 'Ciencia',
     difficulty: 'Difícil',
     question: '¿Qué es la antimateria?',
-    correct_answer:
+    correctAnswer:
       'Una forma de materia que tiene propiedades opuestas a la materia ordinaria',
-    incorrect_answers: [
+    answers: [
       'Una forma de materia que no tiene carga eléctrica',
       'Una forma de materia que no tiene masa',
-      'Una forma de energía que tiene la capacidad de desintegrar la materia'
+      'Una forma de energía que tiene la capacidad de desintegrar la materia',
+      'Una forma de materia que tiene propiedades opuestas a la materia ordinaria'
     ]
   },
   {
@@ -832,9 +907,10 @@ export const questions = [
     difficulty: 'Fácil',
     question: '¿Qué es el acrónimo "CPU" en inglés?',
     category: 'Tecnología',
-    correct_answer: 'Central Processing Unit',
-    incorrect_answers: [
+    correctAnswer: 'Central Processing Unit',
+    answers: [
       'Computer Personal Unit',
+      'Central Processing Unit',
       'Central Personal Unit',
       'Computer Processing Unit'
     ]
@@ -845,7 +921,7 @@ export const questions = [
     question:
       '¿Cuál es el nombre de la primera computadora electrónica digital?',
     category: 'Tecnología',
-    correct_answer: 'ENIAC',
-    incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC']
+    correctAnswer: 'ENIAC',
+    answers: ['ENIAC', 'UNIVAC', 'COLOSSUS', 'EDSAC']
   }
 ]
