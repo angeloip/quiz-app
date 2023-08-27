@@ -11,9 +11,9 @@ export default function CategoryCard({ category }: { category: Category }) {
     <Link
       key={category.name}
       to={`/category/${category.name}`}
-      className={`rounded-xl my-2 bg-gradient-to-r ${category.gradientColor} transition-transform hover:scale-105`}
+      className={`rounded-xl my-2 bg-gradient-to-r ${category.gradientColor} w-48 transition-transform hover:scale-105`}
     >
-      <figure className="p-5 flex justify-center items-center h-36 w-36">
+      <figure className="p-5 flex justify-center items-center h-36 w-36 mx-auto">
         <img src={category.img} alt={category.name} className="h-full w-full" />
       </figure>
 
